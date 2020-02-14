@@ -133,27 +133,27 @@ xnoremap <silent> <Plug>SystemPaste :<C-U>call <SID>system_paste(visualmode(),vi
 nnoremap <silent> <Plug>SystemPaste :<C-U>set opfunc=<SID>system_paste<CR>g@
 nnoremap <silent> <Plug>SystemPasteLine :<C-U>call <SID>system_paste_line()<CR>
 
-if !hasmapto('<Plug>SystemCopy', 'n') || maparg('cp', 'n') ==# ''
-  nmap cp <Plug>SystemCopy
+if !hasmapto('<Plug>SystemCopy', 'n') || maparg('zy', 'n') ==# ''
+  nmap zy <Plug>SystemCopy
 endif
 
-if !hasmapto('<Plug>SystemCopy', 'v') || maparg('cp', 'v') ==# ''
-  xmap cp <Plug>SystemCopy
+if !hasmapto('<Plug>SystemCopy', 'v') || maparg('zy', 'v') ==# ''
+  xmap zy <Plug>SystemCopy
 endif
 
-if !hasmapto('<Plug>SystemCopyLine', 'n') || maparg('cP', 'n') ==# ''
-  nmap cP <Plug>SystemCopyLine
+if !hasmapto('<Plug>SystemCopyLine', 'n') || maparg('zyy', 'n') ==# ''
+  nmap zyy <Plug>SystemCopyLine
 endif
 
-if !hasmapto('<Plug>SystemPaste', 'n') || maparg('cv', 'n') ==# ''
-  nmap cv <Plug>SystemPaste
+if !hasmapto('<Plug>SystemPaste', 'n') || maparg('zp', 'n') ==# ''
+  nmap zp <Plug>SystemPaste
 endif
 
-if !hasmapto('<Plug>SystemPaste', 'v') || maparg('cv', 'v') ==# ''
-  xmap cv <Plug>SystemPaste
+if !hasmapto('<Plug>SystemPaste', 'v') || maparg('zp', 'v') ==# ''
+  xmap zp <Plug>SystemPaste
 endif
 
-if !hasmapto('<Plug>SystemPasteLine', 'n') || maparg('cV', 'n') ==# ''
-  nmap cV <Plug>SystemPasteLine
+if !hasmapto('<Plug>SystemPasteLine', 'n') || maparg('zpp', 'n') ==# ''
+  nmap zpp <Plug>SystemPasteLine
 endif
 " vim:ts=2:sw=2:sts=2
